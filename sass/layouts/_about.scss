@@ -1,0 +1,39 @@
+.about_top{
+    height: 200px !important;
+    img{
+        height:100%;
+        width: 100%;
+    }
+}
+.about_main{
+    padding: 0 100px;
+    height:300px;
+    display: inline-flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+    top:-150px;
+    &__text{
+        margin-top: 200px;
+        text-align: left;
+        .span-heading{       
+                font-size:1rem;  
+                color:$color-violet-1;       
+             }
+        .span-content{
+            font-size:4rem;
+        }
+    }
+}
+.about_bottom{
+    position: relative;
+    top: -300px;
+    left: 700px;
+}
+//responsive
+@include responsive("large"){
+    .span-content{
+        font-size:  2rem !important;;
+    
+    }
+}

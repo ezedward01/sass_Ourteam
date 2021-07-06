@@ -1,0 +1,11 @@
+.btnPhone{
+    @include styleButton(transparent,5px,5px,1px solid,50px, 1px );
+    @include styleText(13px, $fw-2, white);
+    box-shadow: 0 0 0 3em #b61984 inset;
+    transition: .5s;
+    &:hover{
+        @include styButtonHover(white, $color-violet-1,$color-violet-1);
+        font-weight: $fw-1;
+        box-shadow: 0 0 0 1px #b61984 inset;
+    }
+}
